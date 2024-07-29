@@ -217,12 +217,31 @@ body{
     
 }
 .habit-img-container{
+    /* display: flex;
+    justify-content: space-between; */
+    align-items: center;
+    margin-bottom: 105px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 .habit-img-content{
+    text-align: center;
     width:231px ;
     height: 274px;
+}
+.habit-img{
+    border-radius: 50%;
+}
+.habit-img-t{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top:15px;
+    margin-bottom: 10px;
+}
+.habit-img-d{
+    font-size: 0.8rem;
+    font-weight:400;
+    color:rgba(239, 237, 232, 0.531);
 }
 /* habits container section ends here  */
 
@@ -251,6 +270,10 @@ body{
     width: 170px;
     top:90px;
   }
+  .habit-img-container{
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 25%;
+  }
 }
 /* phone responsive media ends here  */
 
@@ -263,11 +286,14 @@ body{
     flex-direction: column;
     width: 100%;
   }
+  .habit-img-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 /* medium device responsive media ends here */
 
 /* large device responsive media starts here */
-@media screen and (min-width:992px) and (max-width:1640px) {
+@media screen and (min-width:992px) {
   .mega-menu{
     display: none;
   }
