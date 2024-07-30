@@ -62,9 +62,9 @@ body{
 
 /* nav items style starts */
 /* header{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0.321) 100%);
     width: 100%;
-    
+    padding-top: 20px;
 } */
 .nav-banner-container{
     width: 85%;
@@ -149,13 +149,13 @@ body{
 }
 .video-card-2{
     background-color: rgba(255, 255, 255, 0.219);
-    width: 203px;
-    height:80px;
+    width: 180px;
+    height:75px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     position: absolute;
     top: 130px;
     left: 200px;
@@ -164,11 +164,14 @@ body{
 }
 .v-c-2-t{
     color:white;
-    font-weight: 900;
-    font-size: 2.5rem;
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-left: 10px;
 }
 .workout-d{
     color:rgba(239, 237, 232, 0.531);
+    font-size: 0.9rem;
+    margin-left: 10px;
 }
 .video-t-d{
     color:white;
@@ -244,7 +247,39 @@ body{
     color:rgba(239, 237, 232, 0.531);
 }
 /* habits container section ends here  */
-
+/* run container starts here  */
+.run-container{
+  width:85%;
+  margin:0 auto;
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:30px;
+  margin-bottom: 100px;
+  border-radius:20px;
+}
+.run-info{
+  width:403px ;
+  padding-left: 20px;
+}
+.run-title{
+  font-weight: 800;
+  font-size: 3rem;
+}
+.run-description{
+  color:rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-top: 13px;
+  margin-bottom: 30px;
+}
+.run-img{
+  width:366px;
+  height:312px;
+  border-radius: 18px;
+}
+/* run container ends here  */
 
 /* small device responsive media starts here  */
 @media screen and (max-width:576px) {
@@ -257,6 +292,9 @@ body{
   }
   .banner-info{
     width: 100%;
+  }
+  .banner-img{
+    margin-top:100px;
   }
   .video-card{
     width: 190px;
@@ -272,7 +310,16 @@ body{
   }
   .habit-img-container{
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 25%;
+    place-items: center;
+  }
+  .run-container{
+    flex-direction: column;
+  }
+  .run-info{
+    width: 100%;
+  }
+  .run-img{
+    margin-top: 50px;
   }
 }
 /* phone responsive media ends here  */
@@ -288,6 +335,7 @@ body{
   }
   .habit-img-container{
     grid-template-columns: repeat(2, 1fr);
+    place-items: center;
   }
 }
 /* medium device responsive media ends here */
