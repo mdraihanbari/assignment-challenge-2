@@ -285,12 +285,10 @@ body{
 
 /* bmi container starts here   */
 .bmi-container{
-  border:2px solid red;
   width: 85%;
   margin:0 auto;
 }
 .bmi-heding{
-  border:2px solid red;
   width:600px;
   margin:0 auto;
   margin-bottom: 80px;
@@ -326,7 +324,6 @@ td{
   gap:20px;
 }
 .bmi-calculator{
-  border:2px solid red;
   width: 500px;
   height:380px;
 }
@@ -366,6 +363,9 @@ td{
   margin-top:10px;
   width: 224px;
   height:50px;
+}
+option{
+  color:black;
 }
 /* bmi container ends here   */
 
