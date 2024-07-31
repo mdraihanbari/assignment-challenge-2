@@ -16,6 +16,8 @@ body{
   font-family: "Inter", sans-serif; 
   background-color: rgb(0, 0, 0);
   color:white;
+  max-width: 1440px;
+  margin:auto;
 }
 
 
@@ -281,6 +283,92 @@ body{
 }
 /* run container ends here  */
 
+/* bmi container starts here   */
+.bmi-container{
+  border:2px solid red;
+  width: 85%;
+  margin:0 auto;
+}
+.bmi-heding{
+  border:2px solid red;
+  width:600px;
+  margin:0 auto;
+  margin-bottom: 80px;
+}
+.bmi-title{
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.bmi-description{
+  color:rgba(239, 237, 232, 0.531);
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+/* bmi charts  */
+table{
+  border-collapse: collapse;
+  width:320px;
+  height:220px;
+  text-align: center;
+  margin-top: 70px;
+}
+td,th{
+  border:2px solid rgba(255, 255, 255, 0.219);
+}
+td{
+  font-weight: 400;
+  font-size: 0.9rem;
+  color:rgba(239, 237, 232, 0.531);
+}
+.bmi-content{
+  display: flex;
+  justify-content: space-between;
+  gap:20px;
+}
+.bmi-calculator{
+  border:2px solid red;
+  width: 500px;
+  height:380px;
+}
+.calculator-title{
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+.calculator-description{
+  font-size: 0.8rem;
+  font-weight: 400;
+  color:rgba(239, 237, 232, 0.531);
+  margin-bottom: 30px;
+}
+.mesurement{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr ) ;
+  gap:10px;
+  width: 100%;
+}
+#height, #weight , #age, #sex, #activity{
+  height: 40px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.145);
+  border:none;
+  padding-left: 15px;
+}
+#sex , #activity {
+  color:rgba(255, 255, 255, 0.367);
+}
+#activity{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.calculate{
+  margin-top:10px;
+  width: 224px;
+  height:50px;
+}
+/* bmi container ends here   */
+
 /* small device responsive media starts here  */
 @media screen and (max-width:576px) {
   .menu-items{
@@ -305,8 +393,8 @@ body{
   }
   .video-card-2{
     position: absolute;
-    width: 170px;
-    top:90px;
+    width: 150px;
+    top:60px;
   }
   .habit-img-container{
     grid-template-columns: repeat(1, 1fr);
@@ -320,6 +408,15 @@ body{
   }
   .run-img{
     margin-top: 50px;
+  }
+  .bmi-description{
+    width: 50%;
+  }
+  .bmi-content{
+    flex-direction: column;
+  }
+  .bmi-calculator{
+    width: 100%;
   }
 }
 /* phone responsive media ends here  */
@@ -336,6 +433,13 @@ body{
   .habit-img-container{
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
+    
+  }
+  .bmi-content{
+    flex-direction: column;
+  }
+  .bmi-calculator{
+    width: 100%;
   }
 }
 /* medium device responsive media ends here */
