@@ -360,11 +360,18 @@ td{
   padding-right: 10px;
   border-radius: 10px;
   color: rgba(255, 255, 255, 0.6);
+  width: 90%;
+  gap:15px;
 }
 ::placeholder{
   color:rgba(255, 255, 255, 0.6);
 }
-
+#weight{
+  width: 100%;
+}
+#gender{
+  width: 100%;
+}
 #activity{
   width: 100%;
   margin-top: 10px;
@@ -594,6 +601,9 @@ width: 70%;
   }
   .bmi-content{
     flex-direction: column;
+  }
+  .bmi-description{
+    width: 90%;
   }
   .bmi-calculator{
     width: 100%;
